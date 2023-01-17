@@ -1,0 +1,19 @@
+.itemlist{
+    background-color: gray;
+    }
+
+.producto{
+    padding: 5px;
+    
+}
+
+.button{
+    
+    align-items: center;
+}
+
+button{
+    padding: 10px;
+    margin: 10px;
+    margin-left: 40px;
+}
