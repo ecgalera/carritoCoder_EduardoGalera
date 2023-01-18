@@ -9,11 +9,16 @@
 
 .button{
     
-    align-items: center;
+   margin: 25px;
+  
 }
 
 button{
     padding: 10px;
     margin: 10px;
     margin-left: 40px;
+}
+
+Link{
+    margin: 50px;
 }

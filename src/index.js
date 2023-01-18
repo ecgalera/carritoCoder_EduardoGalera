@@ -23,7 +23,7 @@ root.render(
         <Route exact path='/' element={<Home/>}/>
         <Route exact path='/product' element={<ItemListContainers/>}/>
         <Route exact path='/product/:productoId' element={<ItemDetailContainer/>}/>
-        <Route exact path='/category/:categoryId' element={<ItemList/>}/>
+        <Route exact path='/categoria/:categoryId' element={<ItemList/>}/>
       </Routes>
    </BrowserRouter>
   </React.StrictMode>

@@ -19,7 +19,7 @@ const ItemList = (props) => {
 
     if(categoryId!= null){
 
-      fetch(`https://fakestoreapi.com/category/${categoryId}`)
+      fetch(`https://fakestoreapi.com/products/category/${categoryId}`)
   .then(res => res.json())
   .then(json => setProduct(json.map(product => <Item key={product.id} id={"product" + product.id} data={product} />)))
 
@@ -36,10 +36,16 @@ const ItemList = (props) => {
   
   return (
 
+    <div>
     <div className='button'>
+    <h3>Seleccione por Categoría</h3>
+    <Link to={'/categoria/jewelery'}>Joyeria</Link><br></br>
+    <Link to={'/categoria/electronics'}>Electronica</Link><br></br>
+    <Link to={"/categoria/men's clothing"}>Ropa de Hombre</Link><br></br>
+    <Link to={"/categoria/women's clothing"}>Ropa de Mujer</Link><br></br>
+    </div>
 
-    <Link to={`/categoria/${categoryId}`}>Categoria</Link>
-
+    
     <Container className='itemlist'>
       <div className='row'>
         <div className='producto'>
