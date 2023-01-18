@@ -39,12 +39,15 @@ const ItemList = (props) => {
     <div>
     <div className='button'>
     <h3>Seleccione por Categoría</h3>
+    <Link to="/product">Haga click aquí para cambiar de categoria</Link><br></br><br></br>
+
     <Link to={'/categoria/jewelery'}>Joyeria</Link><br></br>
     <Link to={'/categoria/electronics'}>Electronica</Link><br></br>
     <Link to={"/categoria/men's clothing"}>Ropa de Hombre</Link><br></br>
     <Link to={"/categoria/women's clothing"}>Ropa de Mujer</Link><br></br>
     </div>
 
+    
     
     <Container className='itemlist'>
       <div className='row'>
