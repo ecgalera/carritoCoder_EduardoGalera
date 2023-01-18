@@ -8,7 +8,7 @@ import ItemListContainers from './components/ItemListContainers';
 import ItemDetailContainer from './components/itemDetailContainer/ItemDetailContainer'
 import ItemList from './components/itemList/ItemList';
 // import CategoryItemContainer from './components/CategoryItemContainer';
-
+import Nosotros from './components/Nosotros';
 
 
 
@@ -21,6 +21,7 @@ root.render(
      
       <Routes>
         <Route exact path='/' element={<Home/>}/>
+        <Route exact path='/nosotros' element={<Nosotros/>}/>
         <Route exact path='/product' element={<ItemListContainers/>}/>
         <Route exact path='/product/:productoId' element={<ItemDetailContainer/>}/>
         <Route exact path='/categoria/:categoryId' element={<ItemList/>}/>

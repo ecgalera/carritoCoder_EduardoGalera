@@ -17,7 +17,7 @@ function Navbars() {
           <Nav className="me-auto">
             <li><Link to="/">Home</Link></li>
             <li><Link to="/product">Productos</Link></li>
-            <li href="#pricing">Servicios</li>
+            <li><Link to="/nosotros">Nosotros</Link></li>
            <CartWidget/>
           </Nav>
         </Container>

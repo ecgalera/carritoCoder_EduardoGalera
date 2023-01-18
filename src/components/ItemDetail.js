@@ -1,7 +1,9 @@
 import React from 'react'
-// import { Link } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import { Card, Container } from 'react-bootstrap'
 import ItemCount from "./itemCount/ItemCount"
+import "./ItemDetail.css"
+
 
 const ItemDetail = (props) => {
 
@@ -11,6 +13,9 @@ const ItemDetail = (props) => {
 
  
     <div>
+    
+     <Link className={"link"} to="/product"> Regresar a Productos</Link>
+
       <Container className='container'>
         <Card style={{ width: '15rem' }} className='altura'>
           <Card.Img variant="top" src={image} />
